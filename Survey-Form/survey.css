@@ -1,0 +1,139 @@
+/* start some normailze form all page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* end some normailze form all page */
+/* Start styling of countainer */
+.countainer {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* End styling of countainer */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* start header styling of countainer */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* end header styling */
+/* start form styling */
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: crimson;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(27, 27, 50, 0.8);
+}
+@media (max-width: 575px) {
+  form {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  form {
+    width: 80%;
+  }
+}
+label#name-label,
+label#email-label,
+label#number-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+input#name,
+input#email,
+input#number {
+  width: 100%;
+  height: 25px;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 15px;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+select#dropdown {
+  width: 100%;
+  height: 33px;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.select label,
+.cheack label {
+  font-size: 20px;
+  font-weight: 500;
+}
+p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+textarea#comments {
+  width: 100%;
+}
+.form-group.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button#submit {
+  width: 100%;
+  border: 1px soild;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #37af65;
+  color: #fff;
+}
+/* end form styling */
