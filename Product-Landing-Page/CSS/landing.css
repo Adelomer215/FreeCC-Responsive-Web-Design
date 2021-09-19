@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* start container styling*/
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* end container styling*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* start styling header */
+header .image {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+header .image img {
+  width: 100%;
+}
+header nav ul.head-move {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav ul.head-move a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav ul.head-move a:hover {
+  background-color: aqua;
+  padding-left: 10px;
+}
+/* end styling header */
+/* start styling subscribe */
+section.subscribe {
+  margin-bottom: 15px;
+}
+section.subscribe h2 {
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+}
+section.subscribe form input.form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  border: 1px solid red;
+  outline: none;
+  padding: 5px 10px;
+  height: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+section.subscribe form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.subscribe form .form-group button {
+  border: 1px solid;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: #f1c40f;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 5px;
+}
+/* end styling subscribe */
+/* start styling features */
+.features .part,
+.product {
+  padding: 5px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.features .part .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.features .part .icon i {
+  font-size: 3rem;
+  color: darkorange;
+}
+.features .part .describtion h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+.features .part .describtion p {
+  width: 100%;
+  text-align: center;
+}
+/* end styling features */
+/* start styling ifream */
+.ifream .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ifream #video {
+  width: 100%;
+  max-width: 710px;
+}
+/* end styling ifream */
+/* start styling products */
+.products {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.products h2 {
+  background-color: #ddd;
+  text-align: center;
+  padding: 10px;
+  margin: -6px;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 10px;
+}
+.products h3 {
+  text-align: center;
+}
+.products ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.products ul li {
+  margin-bottom: 5px;
+}
+.products .product .but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .product button {
+  border: 1px solid;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: #f1c40f;
+  font-size: 1.5em;
+  font-weight: 500;
+  max-width: 200px;
+  border-radius: 5px;
+}
+/* end styling products */
+/* start styling footer */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+/* end styling footer */
+
+/* start media */
+@media (min-width: 800px) {
+  .features .container,
+  .products .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features .container .part,
+  .products .container .product {
+    width: calc(95% / 3);
+  }
+}
+/* end media */
