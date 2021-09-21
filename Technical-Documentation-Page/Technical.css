@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090909;
+  color: #2eff7b;
+  display: flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  min-height: 100vh;
+}
+/* start styling nav */
+nav.navbar {
+  flex-grow: 1;
+  color: #090909;
+  background-color: #2eff7b;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0px;
+  border-right: 3px solid #607d8b;
+}
+nav.navbar header h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #090909;
+  padding-bottom: 15px;
+}
+nav.navbar ul {
+  height: 90%;
+  overflow-x: auto;
+}
+nav.navbar ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+}
+nav.navbar ul li a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #090909;
+  display: block;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+nav.navbar ul li a:hover {
+  background-color: rgb(125 255 173);
+  padding-left: 50px;
+}
+/* end styling nav */
+main.main-doc {
+  width: calc(100% - 220px);
+  margin-left: 300px;
+}
+main.main-doc .main-section ul {
+  margin-left: 30px;
+}
+main.main-doc .main-section ul li {
+  margin-bottom: 10px;
+}
+main.main-doc .main-section code {
+  display: block;
+  background-color: red;
+  padding: 10px;
+  line-height: 1.8;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+main.main-doc .main-section header h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+main.main-doc article {
+  margin-left: 10px;
+}
+main.main-doc .main-section p {
+  margin-bottom: 10px;
+  width: 99%;
+  line-height: 1.4;
+}
+main.main-doc #Introduction ol {
+  padding-left: 30px;
+  width: 85%;
+}
+main.main-doc #Introduction ol li {
+  margin-bottom: 10px;
+}
+main.main-doc #reference a {
+  color: #f00;
+  font-size: 1.6rem;
+}
+main.main-doc footer {
+  text-align: center;
+  margin: 30px 0;
+  color: #f00;
+}
+@media (max-width: 800px) {
+  nav.navbar {
+    display: none;
+  }
+  main.main-doc {
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
